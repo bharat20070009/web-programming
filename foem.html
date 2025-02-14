@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Form</title>
+    <style>
+        body {
+            background-color: #27c1b5;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .form-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #cf1030;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            padding: 12px 20px;
+            background-color: #0B3D91;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #045A8C;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Fill the Form:</h2>
+<hr>
+        <form action="">
+            <label for="firstname">Firstname:</label>
+            <input type="text" name="firstname" id="firstname">
+
+            <label for="lastname">Lastname:</label>
+            <input type="text" name="lastname" id="lastname">
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+
+            <label for="dropdown">Subject of Interest:</label>
+            <select name="dropdown" id="dropdown">
+                <option value="Mathematics">Mathematics</option>
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Biology">Biology</option>
+                <option value="Computer Science Engineering" selected>Computer Science Engineering</option>
+            </select>
+
+            <label for="languages">Languages Known:</label>
+            <input type="text" name="languages" id="languages">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob">
+
+            <label for="contact">Contact No.:</label>
+            <input type="number" name="contact" id="contact">
+
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address">
+
+            <label for="pincode">Pincode:</label>
+            <input type="number" name="pincode" id="pincode">
+
+            <label for="state">State:</label>
+            <input type="text" name="state" id="state">
+
+            <label for="country">Country:</label>
+            <input type="text" name="country" id="country">
+
+            <div class="buttons">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
